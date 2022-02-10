@@ -276,7 +276,7 @@ namespace Netcode.Transports.Ruffles
             serverConnection = null;
         }
 
-        public override void Initialize()
+        public override void Initialize(NetworkManager m)
         {
             messageBuffer = new byte[TransportBufferSize];
 
